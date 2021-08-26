@@ -1,0 +1,7 @@
+{
+  "name": "Heroku Button Spike",
+  "description": "A static html app to test deploying with Heroku Buttons",
+  "repository": "https://github.com/heroku/node-js-getting-started",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "static"]
+}
