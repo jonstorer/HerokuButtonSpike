@@ -11,7 +11,7 @@
   "formation": { "web": { "quantity": 1, "size": "free" } },
   "image": "",
   "addons": [ ],
-  "buildpacks": [ { } ],
+  "buildpacks": [ ],
   "environments": {
     "production": { "scripts": { } },
     "test": { "scripts": { } }
