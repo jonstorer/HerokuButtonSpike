@@ -5,20 +5,13 @@
   "website": "https://test-app.com/",
   "repository": "https://github.com/jonstorer/HerokuButtonSpike",
   "logo": "",
-  "success_url": "/welcome",
+  "success_url": "/",
   "scripts": { },
   "env": { },
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
+  "formation": { "web": { "quantity": 1, "size": "free" } },
   "image": "",
   "addons": [ ],
-  "buildpacks": [
-    { "url": "https://github.com/heroku/heroku-buildpack-static" }
-  ],
+  "buildpacks": [ { } ],
   "environments": {
     "production": { "scripts": { } },
     "test": { "scripts": { } }
