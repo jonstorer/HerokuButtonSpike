@@ -11,8 +11,7 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "demo",
-      "command": "npm start"
+      "size": "free"
     }
   },
   "image": "",
