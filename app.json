@@ -7,16 +7,7 @@
   "logo": "",
   "success_url": "/welcome",
   "scripts": { },
-  "env": {
-    "SECRET_TOKEN": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
-    },
-    "WEB_CONCURRENCY": {
-      "description": "The number of processes to run.",
-      "value": "1"
-    }
-  },
+  "env": { },
   "formation": {
     "web": {
       "quantity": 1,
@@ -25,13 +16,9 @@
     }
   },
   "image": "",
-  "addons": [
-    "openredis",
-    { "plan": "mongolab:shared-single-small", "as": "MONGO" },
-    { "plan": "heroku-postgresql", "options": { "version": "9.5" } }
-  ],
+  "addons": [ ],
   "buildpacks": [
-    { "url": "https://github.com/stomita/heroku-buildpack-phantomjs" }
+    { "url": "https://github.com/heroku/heroku-buildpack-static" }
   ],
   "environments": {
     "production": { "scripts": { } },
