@@ -1,7 +1,40 @@
 {
   "name": "Heroku Button Spike",
   "description": "A static html app to test deploying with Heroku Buttons",
-  "repository": "https://github.com/heroku/node-js-getting-started",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "keywords": ["node", "express", "static"]
+  "keywords": [ "spike", "heroku", "button" ],
+  "website": "https://test-app.com/",
+  "repository": "https://github.com/jonstorer/HerokuButtonSpike",
+  "logo": "",
+  "success_url": "/welcome",
+  "scripts": { },
+  "env": {
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "WEB_CONCURRENCY": {
+      "description": "The number of processes to run.",
+      "value": "1"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "demo",
+      "command": "npm start"
+    }
+  },
+  "image": "",
+  "addons": [
+    "openredis",
+    { "plan": "mongolab:shared-single-small", "as": "MONGO" },
+    { "plan": "heroku-postgresql", "options": { "version": "9.5" } }
+  ],
+  "buildpacks": [
+    { "url": "https://github.com/stomita/heroku-buildpack-phantomjs" }
+  ],
+  "environments": {
+    "production": { "scripts": { } },
+    "test": { "scripts": { } }
+  }
 }
